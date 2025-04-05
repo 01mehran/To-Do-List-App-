@@ -85,7 +85,7 @@ main form button:hover i {
 }
 .task__list li {
   border: 1px solid var(--lightGray);
-  padding: 1rem;
+  padding: 1.5rem;
   list-style: none;
   border-radius: 0.5rem;
   margin-top: 1rem;
@@ -99,7 +99,7 @@ main form button:hover i {
   gap: 0.5rem;
 }
 .done__wrapper span {
-  color: rgba(0, 0, 0, 0.6)
+  color: rgba(0, 0, 0, 0.6);
 }
 .done__wrapper input[type="checkbox"] {
   cursor: pointer;
@@ -110,7 +110,7 @@ main form button:hover i {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 1rem 0;
+  padding: 1rem 0 0;
 }
 .task__list li .chores__wrapper span {
   color: var(--black);
@@ -171,10 +171,11 @@ li.checked .chores__wrapper span {
 @media screen and (width < 820px) {
   .wrapper {
     margin: 5px;
+    border-radius: 0;
   }
 
-  .wrapper {
-    box-shadow: none;
+  header {
+    border-radius: 0;
   }
 }
 @media screen and (width < 500px) {
